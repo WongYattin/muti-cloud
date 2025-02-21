@@ -12,19 +12,21 @@
       "terragrunt": "latest"
     },
     "customizations"{
-      "vscode"{
+      "vscode": {
         "extensions": [
           "redhat.vscode-yaml",
           "GitHub.copilot-chat",
-        "GitHub.copilot",
-        "ms-azuretools.vscode-azure-github-copilot",
-        "ms-vscode.vscode-node-azure-pack",
-        "AmazonWebServices.aws-toolkit-vscode",
-        "GoogleCloudTools.cloudcode",
-        "ms-azuretools.vscode-docker",
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "ipedrazas.kubernetes-snippets",
-        "4ops.terraform",
+          "GitHub.copilot",
+          "ms-azuretools.vscode-azure-github-copilot",
+          "ms-vscode.vscode-node-azure-pack",
+          "AmazonWebServices.aws-toolkit-vscode",
+          "GoogleCloudTools.cloudcode",
+          "ms-azuretools.vscode-docker",
+          "ms-kubernetes-tools.vscode-kubernetes-tools",
+          "ipedrazas.kubernetes-snippets",
+          "4ops.terraform",
         ]
       }
     }
+  }
+}
