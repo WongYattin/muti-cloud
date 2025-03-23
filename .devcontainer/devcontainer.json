@@ -5,28 +5,31 @@
     "ghcr.io/devcontainers-extra/features/kubectl-asdf:2": {},
     "ghcr.io/dhoeric/features/google-cloud-cli:1": {},
     "ghcr.io/devcontainers/features/azure-cli:1": {},
-    "ghcr.io/devcontainers/features//aws-cli:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
     "ghcr.io/devcontainers/features/terraform:1": {
       "version": "latest",
       "tflint": "latest",
       "terragrunt": "latest"
     },
-    "customizations"{
-      "vscode": {
-        "extensions": [
-          "redhat.vscode-yaml",
-          "GitHub.copilot-chat",
-          "GitHub.copilot",
-          "ms-azuretools.vscode-azure-github-copilot",
-          "ms-vscode.vscode-node-azure-pack",
-          "AmazonWebServices.aws-toolkit-vscode",
-          "GoogleCloudTools.cloudcode",
-          "ms-azuretools.vscode-docker",
-          "ms-kubernetes-tools.vscode-kubernetes-tools",
-          "ipedrazas.kubernetes-snippets",
-          "4ops.terraform",
-        ]
-      }
+    "ghcr.io/devcontainers/features/powershell:1": {}  // 新增 PowerShell 功能
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.vscode-yaml",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "ms-azuretools.vscode-azure-github-copilot",
+        "ms-vscode.vscode-node-azure-pack",
+        "AmazonWebServices.aws-toolkit-vscode",
+        "GoogleCloudTools.cloudcode",
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ipedrazas.kubernetes-snippets",
+        "4ops.terraform",
+        "ms-vscode.powershell"  // 新增 PowerShell 扩展以便在 VS Code 中更好地支持
+      ]
     }
-  }
+  },
+  "postCreateCommand": "pwsh -Command 'Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force'"  // 自动安装 Azure PowerShell 模块
 }
