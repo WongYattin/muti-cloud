@@ -10,8 +10,7 @@
       "version": "latest",
       "tflint": "latest",
       "terragrunt": "latest"
-    },
-    "ghcr.io/devcontainers/features/powershell:1": {}  // 新增 PowerShell 功能
+    }
   },
   "customizations": {
     "vscode": {
@@ -26,10 +25,8 @@
         "ms-azuretools.vscode-docker",
         "ms-kubernetes-tools.vscode-kubernetes-tools",
         "ipedrazas.kubernetes-snippets",
-        "4ops.terraform",
-        "ms-vscode.powershell"  // 新增 PowerShell 扩展以便在 VS Code 中更好地支持
+        "4ops.terraform"
       ]
     }
-  },
-  "postCreateCommand": "pwsh -Command 'Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force'"  // 自动安装 Azure PowerShell 模块
+  }
 }

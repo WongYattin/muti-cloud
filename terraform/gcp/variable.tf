@@ -7,7 +7,7 @@ variable "project_id" {
 variable "region" {
   description = "Default Region"
   type        = string
-  default     = "us-central1"
+  default     = "asia-east2"
 }
 
 variable "db_instance_name" {
